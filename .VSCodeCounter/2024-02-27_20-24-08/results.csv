@@ -1,0 +1,16 @@
+"filename", "language", "Go", "Go Module File", "Protocol Buffers", "Go Checksum File", "YAML", "comment", "blank", "total"
+"/Users/lightbeag2/GolandProjects/NewAuthService/go.mod", "Go Module File", 0, 33, 0, 0, 0, 0, 4, 37
+"/Users/lightbeag2/GolandProjects/NewAuthService/go.sum", "Go Checksum File", 0, 0, 0, 93, 0, 0, 1, 94
+"/Users/lightbeag2/GolandProjects/NewAuthService/protos/sso.pb.go", "Go", 316, 0, 0, 0, 0, 11, 45, 372
+"/Users/lightbeag2/GolandProjects/NewAuthService/protos/sso.proto", "Protocol Buffers", 0, 0, 22, 0, 0, 0, 7, 29
+"/Users/lightbeag2/GolandProjects/NewAuthService/protos/sso_grpc.pb.go", "Go", 104, 0, 0, 0, 0, 21, 17, 142
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/client/client.go", "Go", 13, 0, 0, 0, 0, 0, 3, 16
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/cmd/main.go", "Go", 54, 0, 0, 0, 0, 1, 8, 63
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/config/config.yaml", "YAML", 0, 0, 0, 0, 7, 0, 0, 7
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/repository/auth_repo.go", "Go", 11, 0, 0, 0, 0, 0, 5, 16
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/repository/repository.go", "Go", 11, 0, 0, 0, 0, 0, 5, 16
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/server/server.go", "Go", 15, 0, 0, 0, 0, 0, 6, 21
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/service/auth.go", "Go", 11, 0, 0, 0, 0, 0, 5, 16
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/internal/service/service.go", "Go", 11, 0, 0, 0, 0, 0, 5, 16
+"/Users/lightbeag2/GolandProjects/NewAuthService/sso/pkg/init_postgre.go", "Go", 21, 0, 0, 0, 0, 0, 5, 26
+"Total", "-", 567, 33, 22, 93, 7, 33, 116, 871

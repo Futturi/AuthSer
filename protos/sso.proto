@@ -7,6 +7,15 @@ option go_package = "github.com/Futturi/Auth2/proto";
 service Auth {
     rpc Register (RegisterRequest) returns (RegisterResponse);
     rpc Login (LoginRequest) returns (LoginResponse);
+    rpc CheckIdentity (CheckIdentityRequest) returns (CheckIdentityResponse);
+}
+
+message CheckIdentityRequest {
+    string header = 1;
+}
+
+message CheckIdentityResponse {
+    int64 user_id = 1;
 }
 
 message RegisterRequest {

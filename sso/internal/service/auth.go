@@ -1,7 +1,9 @@
 package service
 
 import (
+	"crypto/sha1"
 	"errors"
+	"fmt"
 	"time"
 
 	"github.com/Futturi/AuthSer/sso/internal/repository"
@@ -9,7 +11,8 @@ import (
 )
 
 const (
-	salt = "eojgnrwijnweijfweijfnweijfniwjenfiwnsiquw"
+	salt  = "eojgnrwijnweijfweijfnweijfniwjenfiwnsiquw"
+	salt2 = "orjgnoqemvkwbm;lrmkpoejafkmgt;drlhmoherjso;wsozdnbhkjesr"
 )
 
 type AuthService struct {
@@ -21,7 +24,13 @@ func NewAuthService(repo repository.AuthRepoI) *AuthService {
 }
 
 func (a *AuthService) Register(Email, Password string) (int, error) {
-	return a.repo.Register(Email, Password)
+	return a.repo.Register(Email, hashPass(Password))
+}
+
+func hashPass(password string) string {
+	hash := sha1.New()
+	hash.Write([]byte(password))
+	return fmt.Sprintf("%v", hash.Sum([]byte(salt2)))
 }
 
 type Claim struct {

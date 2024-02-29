@@ -34,7 +34,6 @@ func (p *Server) Login(ctx context.Context, req *proto.LoginRequest) (*proto.Log
 
 func (p *Server) CheckIdentity(ctx context.Context, req *proto.CheckIdentityRequest) (*proto.CheckIdentityResponse, error) {
 	userid, err := p.service.CheckIdentity(req.Header)
-
 	if err != nil {
 		return nil, err
 	}

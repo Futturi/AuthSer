@@ -31,3 +31,12 @@ func (p *Server) Login(ctx context.Context, req *proto.LoginRequest) (*proto.Log
 	}
 	return &proto.LoginResponse{Token: token}, nil
 }
+
+func (p *Server) CheckIdentity(ctx context.Context, req *proto.CheckIdentityRequest) (*proto.CheckIdentityResponse, error) {
+	userid, err := p.service.CheckIdentity(req.Header)
+
+	if err != nil {
+		return nil, err
+	}
+	return &proto.CheckIdentityResponse{UserId: int64(userid)}, nil
+}

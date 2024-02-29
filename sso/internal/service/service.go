@@ -9,6 +9,7 @@ type Service struct {
 type Auth interface {
 	Register(Email, Password string) (int, error)
 	Login(Email, Password string) (string, error)
+	CheckIdentity(Header string) (int, error)
 }
 
 func NewService(repo *repository.Repostory) *Service {
